@@ -1,0 +1,2 @@
+1. Base de datos
+2. Editar template
