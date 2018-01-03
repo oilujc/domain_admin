@@ -5,7 +5,7 @@
 
 	$app->get('/', function (Request $request, Response $response)
 	{
-		return "Hola mundo";
+		return "Hello world";
 	});
 
 	$app->get('/{name}', function (Request $request, Response $response)
