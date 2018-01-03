@@ -1,7 +1,7 @@
 <?php 
-	define("SERVER_DIR", "/home/rebar/rebardomains");
+	//define("SERVER_DIR", "/home/rebar/rebardomains");
 
-	require_once SERVER_DIR."/core/app.php";
+	require_once __DIR__."/../core/app.php";
 
 	$app->run();
 
