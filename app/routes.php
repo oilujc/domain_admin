@@ -3,16 +3,8 @@
 	use \Psr\Http\Message\ResponseInterface as Response;
 	
 
-	$app->get('/', function (Request $request, Response $response)
-	{
-		return "Hello world";
-	});
+	//Ruta home
+	$app->get('/' , 'HomeController:index')->setName('home');
 
-	$app->get('/{name}', function (Request $request, Response $response)
-	{
-		$name = $request->getAttribute('name');
-    	$response->getBody()->write("Hello, $name");
-	    return $response;
-	});
 
  ?>
