@@ -22,6 +22,10 @@ class ComposerStaticInita01605b6bfffdb3a5f767c3ff8fe81d8
             'Slim\\Views\\' => 11,
             'Slim\\' => 5,
         ),
+        'R' => 
+        array (
+            'Respect\\Validation\\' => 19,
+        ),
         'P' => 
         array (
             'Psr\\Http\\Message\\' => 17,
@@ -57,6 +61,10 @@ class ComposerStaticInita01605b6bfffdb3a5f767c3ff8fe81d8
         'Slim\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/slim/Slim',
+        ),
+        'Respect\\Validation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/respect/validation/library',
         ),
         'Psr\\Http\\Message\\' => 
         array (

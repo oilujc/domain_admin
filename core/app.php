@@ -32,6 +32,27 @@
 	$container['HomeController'] = function($container) {
 		return new App\Controllers\HomeController($container);
 	};
+	//Incluir el controlador en el contenedor
+	$container['AuthController'] = function($container) {
+		return new App\Controllers\Auth\AuthController($container);
+	};
+	//Incluir el controlador en el contenedor
+	$container['DomainsController'] = function($container) {
+		return new App\Controllers\DomainsController($container);
+	};
+
+	//Incluir el controlador en el contenedor
+	$container['RoleController'] = function($container) {
+		return new App\Controllers\RoleController($container);
+	};
+	//Incluir el controlador en el contenedor
+	$container['UsersController'] = function($container) {
+		return new App\Controllers\UsersController($container);
+	};
+	//Incluir el controlador en el contenedor
+	$container['GroupsController'] = function($container) {
+		return new App\Controllers\GroupsController($container);
+	};
 
 	require_once __DIR__."/../app/routes.php";
 
