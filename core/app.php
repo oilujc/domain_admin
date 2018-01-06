@@ -34,7 +34,7 @@
 	};
 	//Incluir el controlador en el contenedor
 	$container['AuthController'] = function($container) {
-		return new Auth\AuthController($container);
+		return new App\Controllers\AuthController($container);
 	};
 	//Incluir el controlador en el contenedor
 	$container['DomainsController'] = function($container) {
