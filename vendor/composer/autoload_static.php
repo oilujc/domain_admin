@@ -41,6 +41,7 @@ class ComposerStaticInita01605b6bfffdb3a5f767c3ff8fe81d8
         ),
         'A' => 
         array (
+            'Auth\\' => 5,
             'App\\' => 4,
         ),
     );
@@ -81,6 +82,10 @@ class ComposerStaticInita01605b6bfffdb3a5f767c3ff8fe81d8
         'FastRoute\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
+        ),
+        'Auth\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/Controllers/Auth',
         ),
         'App\\' => 
         array (

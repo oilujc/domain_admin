@@ -1,5 +1,5 @@
 <?php 
-namespace App\Controllers\Auth;
+namespace Auth;
 use App\Controllers\Controller;
 //Controlador de autenticacion
 class AuthController extends Controller{
