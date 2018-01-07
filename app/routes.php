@@ -21,10 +21,13 @@
 	//Ruta users
 	$app->get('/users' , 'UsersController:index')->setName('users');
 
-	//Ruta users
-	$app->get('/domain/new' , 'HomeController:getAggDomain')->setName('newdomain');
+	//Ruta domains
+	$app->get('/domains' , 'DomainController:index')->setName('domains');
+
+	//Ruta agg domain
+	$app->get('/domains/new' , 'HomeController:getAggDomain')->setName('newdomain');
 
 
 	//Ruta domains
-	$app->get('/domain/{domain}' , 'DomainController:index');
+	$app->get('/domains/{domain}' , 'DomainController:getDomain');
  ?>

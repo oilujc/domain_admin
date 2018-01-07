@@ -4,52 +4,61 @@
     {{ parent() }}
 {% endblock %}
 {% block content %}
-     <div class="row">
-        <div class="col-2">
-          <h1>Domains <a href="{{ path_for('newdomain') }}" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i></a></h1>
-        </div>
-        <div class="col-12">
-            <table class="table table-responsive table-bordered table-hover">
-               <thead>
-                 <tr>
-                   <th scope="col">#</th>
-                   <th scope="col">Domain Name</th>
-                   <th scope="col">Registrar</th>
-                   <th scope="col">Added to Account Date</th>
-                   <th scope="col">Registry Created Date</th>
-                   <th scope="col">Updated Date</th>
-                   <th scope="col">Expiry Date</th>
-                   <th scope="col">Nameservers</th>
-                 </tr>
-               </thead>
-               <tbody>
-                 <tr class="clickable-row" data-href="domain/1">
-                  <th scope="row">1</th>
-                  <td>adebtadvisor.com</td>
-                  <td>UNIREGISTRAR CORP</td>
-                  <td>2017-05-24</td>
-                  <td>2017-05-24</td>
-                  <td>2017-05-24</td>
-                  <td>2018-05-24</td>
-                  <td>ns1.uniregistry-dns.com ns1.uniregistry-dns.net ns2.uniregistry-dns.com ns2.uniregistry-dns.net</td>
-                 </tr>
-                 <tr class="clickable-row" data-href="domain/2">
-                   <th scope="row">2</th>
-                   <td>aconsolidationloan.com</td>
-                   <td>UNIREGISTRAR CORP</td>
-                   <td>2017-09-28</td>
-                   <td>2017-09-28</td>
-                   <td>2017-09-28</td>
-                   <td>2018-09-28</td>
-                   <td>ns1.uniregistry-dns.com ns1.uniregistry-dns.net ns2.uniregistry-dns.com ns2.uniregistry-dns.net</td>
-                 </tr>
-               </tbody>
-            </table>
-        </div>
-     </div>
-   
+   <section class="dashboard-counts section-padding">
+	        <div class="container-fluid">
+	          <div class="row">
+	            <div class="col-xl-2 col-md-4 col-6">
+	              <div class="wrapper count-title d-flex">
+	                <div class="icon"><i class="icon-user"></i></div>
+	                <div class="name"><strong class="text-uppercase">New Clients</strong><span>Last 7 days</span>
+	                  <div class="count-number">25</div>
+	                </div>
+	              </div>
+	            </div>
+	            <div class="col-xl-2 col-md-4 col-6">
+	              <div class="wrapper count-title d-flex">
+	                <div class="icon"><i class="icon-padnote"></i></div>
+	                <div class="name"><strong class="text-uppercase">Work Orders</strong><span>Last 5 days</span>
+	                  <div class="count-number">400</div>
+	                </div>
+	              </div>
+	            </div>
+	            <div class="col-xl-2 col-md-4 col-6">
+	              <div class="wrapper count-title d-flex">
+	                <div class="icon"><i class="icon-check"></i></div>
+	                <div class="name"><strong class="text-uppercase">New Quotes</strong><span>Last 2 months</span>
+	                  <div class="count-number">342</div>
+	                </div>
+	              </div>
+	            </div>
+	            <div class="col-xl-2 col-md-4 col-6">
+	              <div class="wrapper count-title d-flex">
+	                <div class="icon"><i class="icon-bill"></i></div>
+	                <div class="name"><strong class="text-uppercase">New Invoices</strong><span>Last 2 days</span>
+	                  <div class="count-number">123</div>
+	                </div>
+	              </div>
+	            </div>
+	            <div class="col-xl-2 col-md-4 col-6">
+	              <div class="wrapper count-title d-flex">
+	                <div class="icon"><i class="icon-list"></i></div>
+	                <div class="name"><strong class="text-uppercase">Open Cases</strong><span>Last 3 months</span>
+	                  <div class="count-number">92</div>
+	                </div>
+	              </div>
+	            </div>
+	            <div class="col-xl-2 col-md-4 col-6">
+	              <div class="wrapper count-title d-flex">
+	                <div class="icon"><i class="icon-list-1"></i></div>
+	                <div class="name"><strong class="text-uppercase">New Cases</strong><span>Last 7 days</span>
+	                  <div class="count-number">70</div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </section>
 {% endblock %}
 {% block foot %}
     {{ parent() }}
-    <script src="{{ base_url() }}/static/js/script.js"></script>
 {% endblock %}

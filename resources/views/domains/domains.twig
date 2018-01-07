@@ -1,0 +1,55 @@
+{% extends 'templates/app.twig' %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+{% block content %}
+  <section class="dashboard-counts">
+    <div class="container-fluid">
+     <div class="row">
+        <div class="col-12">
+            <table class="table table-responsive table-bordered table-hover">
+               <thead>
+                 <tr>
+                   <th scope="col">#</th>
+                   <th scope="col">Domain Name</th>
+                   <th scope="col">Registrar</th>
+                   <th scope="col">Added to Account Date</th>
+                   <th scope="col">Registry Created Date</th>
+                   <th scope="col">Updated Date</th>
+                   <th scope="col">Expiry Date</th>
+                   <th scope="col">Nameservers</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr class="clickable-row" data-href="domains/1">
+                  <th scope="row">1</th>
+                  <td>adebtadvisor.com</td>
+                  <td>UNIREGISTRAR CORP</td>
+                  <td>2017-05-24</td>
+                  <td>2017-05-24</td>
+                  <td>2017-05-24</td>
+                  <td>2018-05-24</td>
+                  <td>ns1.uniregistry-dns.com ns1.uniregistry-dns.net ns2.uniregistry-dns.com ns2.uniregistry-dns.net</td>
+                 </tr>
+                 <tr class="clickable-row" data-href="domains/2">
+                   <th scope="row">2</th>
+                   <td>aconsolidationloan.com</td>
+                   <td>UNIREGISTRAR CORP</td>
+                   <td>2017-09-28</td>
+                   <td>2017-09-28</td>
+                   <td>2017-09-28</td>
+                   <td>2018-09-28</td>
+                   <td>ns1.uniregistry-dns.com ns1.uniregistry-dns.net ns2.uniregistry-dns.com ns2.uniregistry-dns.net</td>
+                 </tr>
+               </tbody>
+            </table>
+        </div>
+     </div>
+    </div> 
+  </section>
+{% endblock %}
+{% block foot %}
+    {{ parent() }}
+    <script src="{{ base_url() }}/static/js/script.js"></script>
+{% endblock %}
