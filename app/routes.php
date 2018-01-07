@@ -25,7 +25,7 @@
 	$app->get('/domains' , 'DomainController:index')->setName('domains');
 
 	//Ruta agg domain
-	$app->get('/domains/new' , 'HomeController:getAggDomain')->setName('newdomain');
+	$app->get('/domains/new' , 'DomainController:getAggDomain')->setName('newdomain');
 
 
 	//Ruta domains

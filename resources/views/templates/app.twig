@@ -43,10 +43,13 @@
       <header class="header">
         {{ include('templates/partials/navbar.twig')}}
       </header>
+
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 p-2">
-            <h1 class="mt-1">{{ title ?? 'Title Example' }}</h1>
+            {% block title %}
+              <h1 class="mt-1">{{ title ?? 'Title Example' }}</h1>
+            {% endblock %}
           </div>
         </div>
       </div>

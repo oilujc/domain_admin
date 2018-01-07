@@ -3,7 +3,10 @@
 {% block head %}
     {{ parent() }}
 {% endblock %}
-{% block content %}
+	{% block title %}
+	    {{ parent() }}
+	{% endblock %}
+	{% block content %}
      	<section class="dashboard-counts">
 	        <div class="container-fluid">
 	          <div class="row">
@@ -13,8 +16,7 @@
 	          </div>
 	        </div>
 	    </section>
-   
-{% endblock %}
+	{% endblock %}
 {% block foot %}
     {{ parent() }}
 {% endblock %}
