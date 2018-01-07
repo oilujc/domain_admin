@@ -7,6 +7,10 @@ class HomeController extends Controller{
 	public function index($request, $response){
 		return $this->view->render($response, 'home.twig');
 	}
+
+	public function getAggDomain($request,$response){
+		return $this->view->render($response, 'domains/aggdomain.twig');
+	}
 }
 
  ?>

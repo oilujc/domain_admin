@@ -12,9 +12,6 @@
 	//Ruta signup
 	$app->get('/signup' , 'AuthController:getSignUp')->setName('auth.signup');
 
-	//Ruta domains
-	$app->get('/domains' , 'DomainsController:index')->setName('domains');
-
 	//Ruta groups
 	$app->get('/groups' , 'GroupsController:index')->setName('groups');
 
@@ -24,5 +21,10 @@
 	//Ruta users
 	$app->get('/users' , 'UsersController:index')->setName('users');
 
+	//Ruta users
+	$app->get('/domain/new' , 'HomeController:getAggDomain')->setName('newdomain');
 
+
+	//Ruta domains
+	$app->get('/domain/{domain}' , 'DomainController:index');
  ?>
