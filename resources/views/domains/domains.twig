@@ -2,6 +2,7 @@
 
 {% block head %}
     {{ parent() }}
+    <link rel="stylesheet" href="{{ base_url() }}/static/DataTables-1.10.16/datatables.css">
 {% endblock %}
 {% block title %}
     <h1>Domains <a href="{{ path_for('domains.new') }}" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i></a></h1>
@@ -11,7 +12,7 @@
     <div class="container-fluid">
      <div class="row">
         <div class="col-12">
-            <table class="table table-responsive table-bordered table-hover">
+            <table id="domains" class="table table-responsive table-bordered table-hover">
                <thead>
                  <tr>
                    <th scope="col">#</th>
@@ -54,5 +55,6 @@
 {% endblock %}
 {% block foot %}
     {{ parent() }}
+    <script src="{{ base_url() }}/static/js/datatables.min.js"></script>
     <script src="{{ base_url() }}/static/js/script.js"></script>
 {% endblock %}
