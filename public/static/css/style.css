@@ -1,3 +1,26 @@
 table tr th.action{
 	width: 10%;
 }
+a.link-color{
+	text-decoration: none;
+	color: #000;
+}
+
+div.g-d-form{
+	display: flex;
+}
+
+div.g-d-form .g-i-text{
+	width: 80%;
+}
+
+div.g-d-form .g-i-sub{
+	flex: 1 1 auto;
+	background-color: transparent;
+}
+div.g-d-form .g-i-sub i{
+	color: #fff;
+	width: 18px;
+	text-align: center;
+}
+

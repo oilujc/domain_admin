@@ -15,6 +15,12 @@
 	//Ruta groups
 	$app->get('/groups' , 'GroupsController:index')->setName('groups');
 
+	//Ruta groups config
+	$app->get('/groups/config' , 'GroupsController:getGroupConfig')->setName('groups.config');
+
+	//Ruta new group
+	$app->get('/groups/new' , 'GroupsController:getGroupNew')->setName('groups.new');
+
 	//Ruta role
 	$app->get('/role' , 'RoleController:index')->setName('role');
 
@@ -25,7 +31,7 @@
 	$app->get('/domains' , 'DomainController:index')->setName('domains');
 
 	//Ruta agg domain
-	$app->get('/domains/new' , 'DomainController:getAggDomain')->setName('newdomain');
+	$app->get('/domains/new' , 'DomainController:getAggDomain')->setName('domains.new');
 
 
 	//Ruta domains

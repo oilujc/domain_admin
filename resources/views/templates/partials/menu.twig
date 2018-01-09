@@ -14,6 +14,10 @@
             <li> <a href="#group-nav-list" data-toggle="collapse" aria-expanded="false"><i class="fa fa-folder"></i><span>Groups (3)</span>
                 <div class="arrow pull-right"><i class="fa fa-angle-down"></i></div></a>
               <ul id="group-nav-list" class="collapse list-unstyled">
+                <li>
+                  <a href="{{ path_for('groups.new') }}"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add new group</a>
+                </li>
+                <div class="dropdown-divider"></div> 
                 <li> <a href="#">Credit domains</a></li>
                 <li> <a href="#">Credit repair</a></li>
                 <li> <a href="#">Dinero</a></li>
@@ -27,7 +31,7 @@
             <li> <a href="#pages-nav-list" data-toggle="collapse" aria-expanded="false"><i class="fa fa-user"></i><span>Admin panel</span>
                 <div class="arrow pull-right"><i class="fa fa-angle-down"></i></div></a>
               <ul id="pages-nav-list" class="collapse list-unstyled">
-                <li> <a href="{{ path_for('groups') }}">Groups</a></li>
+                <li> <a href="{{ path_for('groups.config') }}">Groups</a></li>
                 <li> <a href="{{ path_for('users') }}">Users</a></li>
                 <li> <a href="{{ path_for('role') }}">Role</a></li>
                 <div class="dropdown-divider"></div>
